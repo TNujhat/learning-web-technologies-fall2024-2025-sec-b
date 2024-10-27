@@ -1,0 +1,48 @@
+<employees>
+
+    <employee>
+        <id> 1 </id>
+        <name> John Doe </name>
+        <add> 
+            <f> </f>
+            <h>38</h>
+            <r>3</r>
+            <s>Banani</s>
+            <d>Dhaka</d>
+        </add>
+        <dep> Sales </dep>
+        <salary> $20000 </salary>
+
+    </employee>
+
+    <employee>
+        <id> 2 </id>
+        <name> Mark Juckerburg </name>
+        <add> 
+            <f>A/1</f>
+            <h>20</h>
+            <r>18</r>
+            <s>Mirpur</s>
+            <d>Dhaka</d>
+        </add>
+        <dep> Sales </dep>
+        <salary> $12000 </salary>
+
+    </employee>
+
+    <employee>
+        <id> 1 </id>
+        <name> John Doe </name>
+        <add> 
+            <f> </f>
+            <h>38</h>
+            <r>3</r>
+            <s>Motijheel</s>
+            <d> </d>
+        </add>
+        <dep> Sales </dep>
+        <salary> $30000 </salary>
+
+    </employee>
+
+    </employees>
