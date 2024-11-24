@@ -38,6 +38,22 @@
                     <label for="gender_other"><input type="radio" id="gender_other" name="gender" value="other"> Other</label>
                 </td>
             </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="number" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" name="submit" value="Submit"></td>
+            </tr>
         </table>
     </form>
 </body>
