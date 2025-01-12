@@ -4,26 +4,26 @@ session_start();
 $message = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
+ 
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Basic validations
+   
     if (empty($name) || empty($phone) || empty($username) || empty($password)) {
         $message = "<div class='error-message'>Error: All fields are required.</div>";
     } elseif (!preg_match('/^[0-9]{10}$/', $phone)) {
         $message = "<div class='error-message'>Error: Invalid phone number format. Please enter a 10-digit number.</div>";
     } else {
-        // Database connection
+
         $conn = new mysqli('localhost', 'root', '', 'employees');
 
-        // Check connection
+
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         } else {
-            // Insert data into the employee table
+        
             $stmt = $conn->prepare("INSERT INTO employee (name, phone, username, password) VALUES (?, ?, ?, ?)");
             $stmt->bind_param("ssss", $name, $phone, $username, $password);
 
@@ -125,11 +125,11 @@ header h1 {
 
   #apply h3 {
     text-align: center;
-    color:rgb(122, 38, 217);/* Header color */
+    color:rgb(122, 38, 217);
   }
 
   #apply button {
-    background-color:rgb(122, 38, 217); /* Button color */
+    background-color:rgb(122, 38, 217); 
     color: white;
     border: none;
     padding: 10px 15px;
@@ -138,7 +138,7 @@ header h1 {
   }
 
   #apply button:hover {
-    background-color:rgb(168, 73, 232); /* Darker button color on hover */
+    background-color:rgb(168, 73, 232); 
   }
 
     .success-message {
@@ -146,7 +146,7 @@ header h1 {
             font-size: 20px;
             text-align: center;
             margin: 20px auto;
-            background-color: #eaffea; /* Light green background */
+            background-color: #eaffea;
             padding: 15px 20px;
             border: 1px solid green;
             border-radius: 5px;
@@ -158,7 +158,7 @@ header h1 {
             font-size: 20px;
             text-align: center;
             margin: 20px auto;
-            background-color: #ffeaea; /* Light red background */
+            background-color: #ffeaea; 
             padding: 15px 20px;
             border: 1px solid red;
             border-radius: 5px;
