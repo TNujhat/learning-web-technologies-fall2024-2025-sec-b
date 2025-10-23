@@ -1,1 +1,53 @@
+🚗 BRTA Service Management System
 
+This project is a web-based platform I built to make the Bangladesh Road Transport Authority (BRTA) services more digital and efficient.
+It includes both user and admin panels for managing license applications, road permits, accident reports, and driving appointment bookings — all in one place.
+
+⚙️ Tech Stack
+
+Frontend: HTML, CSS
+
+Backend: PHP
+
+Database: MySQL (phpMyAdmin)
+
+Tools Used: VS Code, XAMPP, Apache Server
+
+🚀 Features
+
+User and Admin Panels:
+I designed and developed separate panels for users and admins to make the system more organized and user-friendly.
+
+License Application Management:
+Users can apply for licenses, and admins can review and approve applications through an approval workflow.
+
+Road Permit & Accident Reporting:
+Added online forms for users to apply for road permits or submit accident reports.
+
+Appointment Booking:
+Implemented a simple appointment booking system for driving lessons or tests.
+
+Admin Dashboard:
+Created a complete admin dashboard to view service requests, approvals, and reports all in one view.
+
+CRUD Operations:
+Integrated full Create, Read, Update, and Delete features for managing user data and applications efficiently.
+
+
+🛠️ How to Run Locally
+
+Install XAMPP (for Apache and MySQL).
+
+Start both Apache and MySQL from the XAMPP Control Panel.
+
+Copy this project folder into:
+
+C:\xampp\htdocs\
+
+
+Open your browser and go to:
+
+http://localhost/BRTA_Project/
+
+
+Open phpMyAdmin, create a database (for example: brta_db) and import the .sql file from the database folder.
